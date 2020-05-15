@@ -1,0 +1,2 @@
+# botrans
+Python Translator Bot.
