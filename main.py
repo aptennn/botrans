@@ -9,6 +9,7 @@ lang = 'en'
 listlang = cfg.LANGUES
 
 
+
 # translator = Translator()
 # b = translator.translate('안녕하세요.', dest='ru', scr='') # scr source lang , dest trans lang
 @bot.message_handler(commands=['start'])
