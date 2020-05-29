@@ -1,4 +1,5 @@
 from googletrans import Translator
+import mysql.connector
 import config as cfg
 import telebot
 from telebot import types
