@@ -1,5 +1,8 @@
+""" This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/."""
+import pymysql
 
-import mysql.connector
 
 TOKEN = ''
 STARTMSG = "Hi, i am translator bot. I use google python and google API. To change lang use /chose"
@@ -12,8 +15,8 @@ LANGDICT = {
 }
 
 
-mydb = mysql.connector.connect(
-    host="db4free.net",
+mydb = pymysql.connect(
+    host="",
     user="",
     passwd="",
     database=""
