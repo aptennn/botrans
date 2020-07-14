@@ -1,10 +1,10 @@
 **Python translator bot**
 ========================
-##Бот-переоводчик на python
+## Бот-переоводчик на python
 ### Требования
-####Версия Python
+#### Версия Python
 Python 3.7+
-####Библиотеки
+#### Библиотеки
 aiogram - ```pip install aiogram```
 
 pymysql - ```pip install PyMySQL```
