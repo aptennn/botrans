@@ -6,9 +6,8 @@ from googletrans import Translator
 import aiogram
 import config as cfg
 import keyboard as k
-from aiogram import Bot, types
-from aiogram.dispatcher import Dispatcher
-from aiogram.utils import executor
+from aiogram import types
+
 
 transl = Translator(0)
 
@@ -17,7 +16,7 @@ bot = aiogram.Bot(token=cfg.TOKEN)
 dp = aiogram.Dispatcher(bot)
 mydb = cfg.mydb
 
-print('stared')
+print('started')
 
 
 
@@ -28,7 +27,8 @@ async def process_start_command(message: aiogram.types.Message):
     adr = (str(message.from_user.id),)
     mycursor.execute(sql, adr)
     myresult = mycursor.fetchall()
-    if myresult is None or myresult == []:
+    print(myresult)
+    if myresult is None or myresult == [] or myresult == ():
         mycursor = mydb.cursor()
         sql = "INSERT INTO users (id, lang) VALUES (%s, %s)"
         val = (str(message.from_user.id), "ru")
@@ -41,7 +41,7 @@ async def process_start_command(message: aiogram.types.Message):
     await message.reply(cfg.STARTMSG)
 
 
-@dp.message_handler(commands=['chose'])
+@dp.message_handler(commands=['choose'])
 async def process_start_command(message: aiogram.types.Message):
     await message.reply(cfg.CHOSEMSG, reply_markup=k.keyb)
 
