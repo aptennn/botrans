@@ -37,3 +37,9 @@ mydb - данные бд
 
 mysql
 
+создать таблицу
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE TABLE user (id VARCHAR(255), lang VARCHAR(255))")
+
