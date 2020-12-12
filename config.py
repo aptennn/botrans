@@ -4,7 +4,7 @@
 import pymysql
 
 
-TOKEN = '1062629942:AAHmJDB8iZj8FOeTY_TeLT42m17RnJIdRug'
+TOKEN = '1062629942:AAH'
 STARTMSG = "Hi, i am translator bot. I use google python and google API. To change lang use /choose"
 CHOSEMSG = "Choose lang"
 LANGUES = ['ru', 'de', 'en']
