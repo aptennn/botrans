@@ -18,7 +18,7 @@ googletrans - ```pip install googletrans```
 Просто Ввод соощебния - бот переведет его
 
 ### Config.py
-TOKEN - токен вашего телеграм бота
+TOKEN - токен вашего телеграм бота.
 
 STARTMSG - сообщение при /start
 
